@@ -1,0 +1,23 @@
+{
+  "name": "ts-test-lib",
+  "version": "0.0.0",
+  "description": "Test TypeScript library",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node -e \"console.log('no tests yet')\""
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
